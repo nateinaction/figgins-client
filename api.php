@@ -33,8 +33,7 @@ class Figgins_Client_API {
 
   public function verify_token( $request ) {
     $token = (new Parser())->parse((string) $request['token']);
-    $secret = 'poke123';
-    //$secret = get_option( 'figgins_client_secret' );
+    $secret = get_option( 'figgins_client_secret' );
     $signer = new Sha256();
 
     // if token does not match or has not been defined
