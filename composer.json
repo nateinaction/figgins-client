@@ -1,0 +1,14 @@
+{
+    "name": "worldpeaceio/figgins-client",
+    "type": "project",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Nate Gay",
+            "email": "nate@worldpeace.io"
+        }
+    ],
+    "require": {
+        "lcobucci/jwt": "^3.2"
+    }
+}
