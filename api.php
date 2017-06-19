@@ -21,10 +21,14 @@ class Figgins_Client_API {
      */
     register_rest_route( $namespace, '/poke', array(
       'methods' => WP_REST_Server::CREATABLE,
-      'callback' => array( $this, 'mirror_token' ),
+      'callback' => array( $this, 'hello_world' ),
       'permission_callback' => array( $this, 'verify_token' ),
     ));
 
+  }
+
+  public function hello_world() {
+    return 'Hello, world!';
   }
 
   public function mirror_token( $request ) {
